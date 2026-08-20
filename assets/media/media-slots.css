@@ -1,0 +1,102 @@
+.chapter-media-slots {
+  max-width: 760px;
+  margin: 42px 0 10px;
+}
+.chapter-media-slots > h3 {
+  margin: 0 0 16px;
+  color: #849188;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+}
+.media-slot {
+  margin: 0 0 36px;
+  border: 1px solid #cbff3f45;
+  background: #050b09;
+  overflow: hidden;
+}
+.media-slot__frame {
+  position: relative;
+  aspect-ratio: var(--media-aspect, 16 / 10);
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(#ffffff08 1px, transparent 1px),
+    linear-gradient(90deg, #ffffff08 1px, transparent 1px), #020605;
+  background-size: 28px 28px;
+  overflow: hidden;
+}
+.media-slot__frame img,
+.media-slot__frame video,
+.media-slot__frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  object-fit: var(--media-fit, contain);
+}
+.media-slot__placeholder-label {
+  position: absolute;
+  z-index: 2;
+  top: 12px;
+  left: 12px;
+  padding: 5px 8px;
+  color: var(--ink);
+  background: var(--lime);
+  letter-spacing: 0.14em;
+  font-size: 8px;
+  font-weight: 800;
+}
+.media-slot[data-media-loaded="true"] .media-slot__placeholder-label {
+  display: none;
+}
+.media-slot figcaption {
+  padding: 18px 20px 20px;
+}
+.media-slot__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin-bottom: 8px;
+}
+.media-slot__kind {
+  color: var(--lime);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 8px;
+  font-weight: 800;
+}
+.media-slot__id {
+  color: #6f7e75;
+  font-family: var(--font-mono);
+  font-size: 9px;
+}
+.media-slot__title {
+  margin: 0;
+  color: #c6d0c9;
+  font-size: 14px;
+  line-height: 1.55;
+}
+.media-slot__help {
+  display: inline-block;
+  margin-top: 11px;
+  color: #91a097;
+  border-bottom: 1px solid #91a09766;
+  font-size: 10px;
+}
+.media-slot__help:hover {
+  color: var(--lime);
+  border-color: var(--lime);
+}
+@media (width <= 640px) {
+  .chapter-media-slots {
+    margin-top: 32px;
+  }
+  .media-slot {
+    margin-bottom: 28px;
+  }
+  .media-slot figcaption {
+    padding: 15px 16px 17px;
+  }
+}

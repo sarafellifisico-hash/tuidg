@@ -319,8 +319,7 @@
     "src": "/tuidg/assets/media/library/mente cósmica.jpeg",
     "alt": "Figure x — Cosmic Mind, the constituent element of the Omega Level",
     "aspect": "16 / 10",
-    "fit": "contain",
-    "poster": "/tuidg/assets/media/library/mente cósmica.jpeg"
+    "fit": "contain"
   },
   {
     "id": "rotating-interaction--001",

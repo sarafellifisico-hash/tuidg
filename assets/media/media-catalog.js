@@ -3,7 +3,13 @@ window.TUIDG_MEDIA_CATALOG = [
     "id": "alpha-epsilon-levels--001",
     "page": "alpha-epsilon-levels",
     "kind": "image",
-    "title": "Figure x — Merons, the constituent elements of the Alpha Level"
+    "title": "Figure 06.2.1 — Merons, the constituent elements of the Alpha Level"
+  },
+  {
+    "id": "alpha-epsilon-levels--002",
+    "page": "alpha-epsilon-levels",
+    "kind": "image",
+    "title": "Figure 06.2.2 — Stars, the constituent elements of the Epsilon Level"
   },
   {
     "id": "attraction-repulsion--001",

@@ -1,0 +1,502 @@
+[
+  {
+    "id": "alpha-epsilon-levels--001",
+    "label": "Figure x — Merons, the constituent elements of the Alpha Level",
+    "type": "image",
+    "src": "",
+    "alt": "Figure x — Merons, the constituent elements of the Alpha Level",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "attraction-repulsion--001",
+    "label": "Animation 3.1.1 – The Attraction and Repulsion between the Compalphas",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 3.1.1 – The Attraction and Repulsion between the Compalphas",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "continua--001",
+    "label": "Figure 3.3 – The Alpha Component or Compalpha**",
+    "type": "image",
+    "src": "",
+    "alt": "Figure 3.3 – The Alpha Component or Compalpha**",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "continua--002",
+    "label": "Animation 3.4 – The Mechanism of the Rotating Interaction of the Compalphas**",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 3.4 – The Mechanism of the Rotating Interaction of the Compalphas**",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "continua--003",
+    "label": "Figure 3.5 – The Metalpha Meron, the Cell of the Geometric Continuum",
+    "type": "image",
+    "src": "",
+    "alt": "Figure 3.5 – The Metalpha Meron, the Cell of the Geometric Continuum",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "continua--004",
+    "label": "Figure 3.6 – Simplified Aspect of the Structure of the Interaction Circles of the Compalphas Forming the Geometric Continuum",
+    "type": "image",
+    "src": "",
+    "alt": "Figure 3.6 – Simplified Aspect of the Structure of the Interaction Circles of the Compalphas Forming the Geometric Continuum",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "continua--005",
+    "label": "Animation 3.6.1 – Simplification of a Superposition of Only 6 Geometric Continuums Forming a Geometric Hypercontinuum",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 3.6.1 – Simplification of a Superposition of Only 6 Geometric Continuums Forming a Geometric Hypercontinuum",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "continua--006",
+    "label": "Presentation 3.8 – Aspect of the Superposition of Geometric Continuums (GC) Forming a Geometric Hypercontinuum (HCG)",
+    "type": "animation",
+    "src": "",
+    "alt": "Presentation 3.8 – Aspect of the Superposition of Geometric Continuums (GC) Forming a Geometric Hypercontinuum (HCG)",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "cyclic-interaction--001",
+    "label": "Presentation — The principle of functionality of Cyclic Interaction",
+    "type": "animation",
+    "src": "",
+    "alt": "Presentation — The principle of functionality of Cyclic Interaction",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "cyclic-interaction--002",
+    "label": "Presentation 4.3.1 - The Apparent Motion of Cyclic Interaction",
+    "type": "animation",
+    "src": "",
+    "alt": "Presentation 4.3.1 - The Apparent Motion of Cyclic Interaction",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "cyclic-interaction--003",
+    "label": "Presentation 4.3.2 - Cyclic Interaction in the structure of Meron Metalpha",
+    "type": "animation",
+    "src": "",
+    "alt": "Presentation 4.3.2 - Cyclic Interaction in the structure of Meron Metalpha",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "cyclic-interaction--004",
+    "label": "Image 4.4.1 - Aspects of Rotating Interaction and Cyclic Interaction",
+    "type": "image",
+    "src": "",
+    "alt": "Image 4.4.1 - Aspects of Rotating Interaction and Cyclic Interaction",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "iota-nu-levels--001",
+    "label": "Figure x — Galaxies, the constituent elements of the Iota Level",
+    "type": "image",
+    "src": "",
+    "alt": "Figure x — Galaxies, the constituent elements of the Iota Level",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "iota-nu-levels--002",
+    "label": "Figure x — Galactic superclusters, the constituent elements of the Nu Level",
+    "type": "image",
+    "src": "",
+    "alt": "Figure x — Galactic superclusters, the constituent elements of the Nu Level",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "isocubic-heterocubic-merons--001",
+    "label": "Figure 6.2.1 - Structural Properties Table",
+    "type": "image",
+    "src": "",
+    "alt": "Figure 6.2.1 - Structural Properties Table",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "isocubic-heterocubic-merons--002",
+    "label": "Animation 6.2.2 - Triacontacubic Meron 1st form",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 6.2.2 - Triacontacubic Meron 1st form",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "isocubic-heterocubic-merons--003",
+    "label": "Animation 6.2.3 - Triacontacubic Meron 2nd form",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 6.2.3 - Triacontacubic Meron 2nd form",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "meronic-structural-foundations--001",
+    "label": "Animation 5.4.1 - The Meron Metalpha, the simplest Meron",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 5.4.1 - The Meron Metalpha, the simplest Meron",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "meronic-structural-foundations--002",
+    "label": "Animation 5.4.2 - The Meron Metalpha, Cuboctahedral form",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 5.4.2 - The Meron Metalpha, Cuboctahedral form",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "meronic-structural-foundations--003",
+    "label": "Animation 5.4.3 - The Meron Pentalpha, Cuboctahedral shape",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 5.4.3 - The Meron Pentalpha, Cuboctahedral shape",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "meronic-structural-foundations--004",
+    "label": "Animation 5.4.4 - Meron 21 closes the third Structural Foundation",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 5.4.4 - Meron 21 closes the third Structural Foundation",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "meronic-structural-foundations--005",
+    "label": "Animation 5.4.5 - Meron 69 closes the fourth Structural Foundation",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 5.4.5 - Meron 69 closes the fourth Structural Foundation",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "meronic-structural-foundations--006",
+    "label": "Animation 5.4.6 - Meron 153 closes the fifth Structural Foundation",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 5.4.6 - Meron 153 closes the fifth Structural Foundation",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "meronic-structural-foundations--007",
+    "label": "Animation 5.6.1 - The Meronic Quadrants",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 5.6.1 - The Meronic Quadrants",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "meronic-structural-foundations--008",
+    "label": "Animation 6.4.1 - The Meron Metalpha (left), view of the cuboctahedron formed by the 12 Alpha Points and the view of its \"fields\" (right)",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 6.4.1 - The Meron Metalpha (left), view of the cuboctahedron formed by the 12 Alpha Points and the view of its \"fields\" (right)",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "meronic-structural-foundations--009",
+    "label": "Animation 5.7.3 - A Meron Etalpha (Deuterium), seen in its metacubic form (on the left) and in its \"field\" form (on the right)",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 5.7.3 - A Meron Etalpha (Deuterium), seen in its metacubic form (on the left) and in its \"field\" form (on the right)",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "meronic-structural-foundations--010",
+    "label": "Animation 5.7.4 - The Meron Propalpha (Tritium, from Hydrogen), vision of the cubes and vision of the \"force fields\".",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 5.7.4 - The Meron Propalpha (Tritium, from Hydrogen), vision of the cubes and vision of the \"force fields\".",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "meronic-structural-foundations--011",
+    "label": "Animation 5.7.5 - The Meron Butalpha",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 5.7.5 - The Meron Butalpha",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "meronic-structural-foundations--012",
+    "label": "Animation 5.7.6 - The Meron Pentalpha",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 5.7.6 - The Meron Pentalpha",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "meronic-structural-foundations--013",
+    "label": "Animation 5.7.7 - The Meron Hexalpha",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 5.7.7 - The Meron Hexalpha",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "meronic-structural-foundations--014",
+    "label": "Animation 5.7.8 - The Meron Heptalpha",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 5.7.8 - The Meron Heptalpha",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "meronic-structural-foundations--015",
+    "label": "Animation 5.7.9 - The Meron Octalpha",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 5.7.9 - The Meron Octalpha",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "meronic-structural-foundations--016",
+    "label": "Animation 5.7.10 - The Meron Nonalpha",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 5.7.10 - The Meron Nonalpha",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "meronic-structural-foundations--017",
+    "label": "Animation 5.7.11 - The Meron Decalpha",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 5.7.11 - The Meron Decalpha",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "meronic-structural-foundations--018",
+    "label": "Animation 5.7.12 - The Meron Undecalpha",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 5.7.12 - The Meron Undecalpha",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "meronic-structural-foundations--019",
+    "label": "Animation 5.7.13 - The Meron Dodecalpha",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 5.7.13 - The Meron Dodecalpha",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "meronic-structural-foundations--020",
+    "label": "Animation 5.7.14 - A Fragment of a Star Crystal",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 5.7.14 - A Fragment of a Star Crystal",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "merons--001",
+    "label": "Animation 6 - The Geometric Structure of Meron Metalpha",
+    "type": "animation",
+    "src": "",
+    "alt": "Animation 6 - The Geometric Structure of Meron Metalpha",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "rho-omega-levels--001",
+    "label": "Figure — Cosmic Cortex, the constituent elements of the Rho Level",
+    "type": "image",
+    "src": "",
+    "alt": "Figure — Cosmic Cortex, the constituent elements of the Rho Level",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "rho-omega-levels--002",
+    "label": "Figure x — Cosmic Mind, the constituent element of the Omega Level",
+    "type": "image",
+    "src": "",
+    "alt": "Figure x — Cosmic Mind, the constituent element of the Omega Level",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "rotating-interaction--001",
+    "label": "Presentation 3.1.1 — The mechanism of the Rotating Interaction of the Geometric Continuum",
+    "type": "animation",
+    "src": "",
+    "alt": "Presentation 3.1.1 — The mechanism of the Rotating Interaction of the Geometric Continuum",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "rotating-interaction--002",
+    "label": "Presentation 3.1.2 — The spin mode of the Interaction Circles",
+    "type": "animation",
+    "src": "",
+    "alt": "Presentation 3.1.2 — The spin mode of the Interaction Circles",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "rotating-interaction--003",
+    "label": "Presentation 3.1.3 — One of the four Alpha Triads of the Meron Metalpha",
+    "type": "animation",
+    "src": "",
+    "alt": "Presentation 3.1.3 — One of the four Alpha Triads of the Meron Metalpha",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "rotating-interaction--004",
+    "label": "Video showing all the steps of the formation of the Geometric Continuum",
+    "type": "video",
+    "src": "",
+    "alt": "Video showing all the steps of the formation of the Geometric Continuum",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "rotating-interaction--005",
+    "label": "Figure 2.1.1 — This is the simplified aspect of the structure of the Geometric Continuum.",
+    "type": "image",
+    "src": "",
+    "alt": "Figure 2.1.1 — This is the simplified aspect of the structure of the Geometric Continuum.",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "velocity-and-constancy--001",
+    "label": "Presentation 5.9a – The Cyclic Current or CyclingPresentation 5.9b – The Cyclic Current or CyclingPresentation 5.9c – The Cyclic Current in a wire of metallic Metalpha (metallic hydrogen)Presentation 5.9d – The Cyclic Current in an AC Generator",
+    "type": "animation",
+    "src": "",
+    "alt": "Presentation 5.9a – The Cyclic Current or CyclingPresentation 5.9b – The Cyclic Current or CyclingPresentation 5.9c – The Cyclic Current in a wire of metallic Metalpha (metallic hydrogen)Presentation 5.9d – The Cyclic Current in an AC Generator",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "velocity-and-constancy--002",
+    "label": "Presentation 5.11 – Remote Cycling (the photoelectric effect)",
+    "type": "animation",
+    "src": "",
+    "alt": "Presentation 5.11 – Remote Cycling (the photoelectric effect)",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "velocity-and-constancy--003",
+    "label": "Presentation 5.12 – Oscillatory Interference (wave interference)",
+    "type": "animation",
+    "src": "",
+    "alt": "Presentation 5.12 – Oscillatory Interference (wave interference)",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "velocity-and-constancy--004",
+    "label": "Figure 39 VI – The Inexpansive Cyclic Interaction",
+    "type": "image",
+    "src": "",
+    "alt": "Figure 39 VI – The Inexpansive Cyclic Interaction",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  },
+  {
+    "id": "velocity-and-constancy--005",
+    "label": "Presentation 5.16 – The Impossible specular reflection",
+    "type": "animation",
+    "src": "",
+    "alt": "Presentation 5.16 – The Impossible specular reflection",
+    "aspect": "16 / 10",
+    "fit": "contain",
+    "poster": ""
+  }
+]

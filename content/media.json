@@ -312,8 +312,7 @@
     "src": "/tuidg/assets/media/library/cortex cósmico.jpeg",
     "alt": "Figure — Cosmic Cortex, the constituent elements of the Rho Level",
     "aspect": "16 / 10",
-    "fit": "contain",
-    "poster": "/tuidg/assets/media/library/cortex cósmico.jpeg"
+    "fit": "contain"
   },
   {
     "id": "rho-omega-levels--002",

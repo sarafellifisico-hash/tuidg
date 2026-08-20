@@ -50,6 +50,7 @@ content:
     label: Theory chapters
     type: collection
     path: content/theory
+    extension: json
     format: json
     operations:
       create: false

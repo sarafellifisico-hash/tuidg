@@ -6,7 +6,8 @@
     "src": "/tuidg/assets/media/library/merons.png",
     "alt": "Figure x — Merons, the constituent elements of the Alpha Level",
     "aspect": "16 / 10",
-    "fit": "contain"
+    "fit": "contain",
+    "poster": "/tuidg/assets/media/library/merons.png"
   },
   {
     "id": "attraction-repulsion--001",

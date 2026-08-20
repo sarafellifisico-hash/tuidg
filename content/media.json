@@ -108,6 +108,7 @@
     "id": "iota-nu-levels--001",
     "label": "Figure x — Galaxies, the constituent elements of the Iota Level",
     "type": "image",
+    "src": "/tuidg/assets/media/library/galaxias.png",
     "alt": "Figure x — Galaxies, the constituent elements of the Iota Level",
     "aspect": "16 / 10",
     "fit": "contain"
@@ -116,6 +117,7 @@
     "id": "iota-nu-levels--002",
     "label": "Figure x — Galactic superclusters, the constituent elements of the Nu Level",
     "type": "image",
+    "src": "/tuidg/assets/media/library/cluster.jpg",
     "alt": "Figure x — Galactic superclusters, the constituent elements of the Nu Level",
     "aspect": "16 / 10",
     "fit": "contain"

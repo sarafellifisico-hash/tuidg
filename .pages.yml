@@ -1,0 +1,150 @@
+media:
+  - name: theory_media
+    label: TUIDG images, videos and animations
+    input: assets/media/library
+    output: /tuidg/assets/media/library
+
+settings:
+  commit:
+    identity: user
+    templates:
+      update: "Edit {path} in the visual editor"
+
+content:
+  - name: home
+    label: Home page
+    type: file
+    path: content/home.json
+    format: json
+    fields:
+      - { name: hero_eyebrow, label: Hero eyebrow, type: string }
+      - { name: hero_title, label: Main title, type: string }
+      - { name: hero_lead, label: Main introduction, type: text }
+      - { name: builder_title, label: Builder heading, type: rich-text, options: { format: html, media: false } }
+      - { name: builder_body, label: Builder description, type: rich-text, options: { format: html, media: false } }
+      - { name: premise_title, label: Premise heading, type: rich-text, options: { format: html, media: false } }
+      - { name: premise_body, label: Premise text, type: rich-text, options: { format: html, media: false } }
+      - { name: foundation_title, label: Logical foundation heading, type: string }
+      - { name: foundation_lead, label: Logical foundation introduction, type: text }
+      - name: principles
+        label: Four principles
+        type: object
+        list: true
+        fields:
+          - { name: title, type: string }
+          - { name: body, type: text }
+      - { name: path_title, label: Reading path heading, type: string }
+      - { name: path_lead, label: Reading path introduction, type: text }
+      - name: chapters
+        label: Reading path cards
+        type: object
+        list: true
+        fields:
+          - { name: title, type: string }
+          - { name: body, type: text }
+      - { name: author_title, label: Author heading, type: string }
+      - { name: author_body, label: Author text, type: rich-text, options: { format: html, media: theory_media } }
+      - { name: copyright, label: Copyright notice, type: string }
+
+  - name: theory
+    label: Theory chapters
+    type: collection
+    path: content/theory
+    format: json
+    operations:
+      create: false
+      rename: false
+      delete: false
+    view:
+      primary: title
+      fields: [title, slug]
+      sort: title
+    fields:
+      - name: slug
+        label: Page identifier
+        type: string
+        readonly: true
+      - name: title
+        label: Chapter title
+        type: string
+        required: true
+      - name: deck
+        label: Introductory summary
+        type: rich-text
+        options:
+          format: html
+          media: false
+      - name: concise
+        label: Concise reading
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "Concise section {index}"
+        fields:
+          - name: body
+            label: Section text
+            type: rich-text
+            options:
+              format: html
+              media: theory_media
+      - name: full
+        label: Full authorial text
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "Full section {index}"
+        fields:
+          - name: body
+            label: Section text
+            type: rich-text
+            options:
+              format: html
+              media: theory_media
+
+  - name: media_manifest
+    label: Media assignments
+    type: file
+    path: content/media.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: Reserved window ID
+        type: string
+        required: true
+        readonly: true
+      - name: label
+        label: Original reference
+        type: text
+        readonly: true
+      - name: type
+        label: Media type
+        type: select
+        options:
+          values: [image, video, animation]
+      - name: src
+        label: Media file
+        type: file
+        options:
+          media: theory_media
+          categories: [image, video, document]
+          rename: safe
+      - name: alt
+        label: Accessible description
+        type: text
+      - name: aspect
+        label: Aspect ratio
+        type: string
+        default: "16 / 10"
+      - name: fit
+        label: Image fit
+        type: select
+        options:
+          values: [contain, cover]
+      - name: poster
+        label: Optional video poster
+        type: image
+        options:
+          media: theory_media

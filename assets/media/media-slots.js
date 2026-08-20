@@ -3,7 +3,6 @@
 
   const scriptUrl = document.currentScript && document.currentScript.src;
   const mediaBase = new URL("./", scriptUrl || document.baseURI);
-  const overrides = window.TUIDG_MEDIA || {};
 
   function mediaUrl(path) {
     return new URL(path, mediaBase).href;
@@ -37,20 +36,35 @@
     return element;
   }
 
-  document.querySelectorAll(".media-slot[data-media-id]").forEach((slot) => {
-    const config = overrides[slot.dataset.mediaId];
-    if (!config || !config.src) return;
+  function applyOverrides(overrides) {
+    document.querySelectorAll(".media-slot[data-media-id]").forEach((slot) => {
+      const config = overrides[slot.dataset.mediaId];
+      if (!config || !config.src) return;
 
-    const frame = slot.querySelector(".media-slot__frame");
-    if (!frame) return;
-    const title = slot.dataset.mediaTitle || "TUIDG visual material";
-    const replacement = createMedia(config, title);
-    const current = frame.querySelector("img, video, iframe");
-    if (current) current.replaceWith(replacement);
-    else frame.appendChild(replacement);
+      const frame = slot.querySelector(".media-slot__frame");
+      if (!frame) return;
+      const title = slot.dataset.mediaTitle || "TUIDG visual material";
+      const replacement = createMedia(config, title);
+      const current = frame.querySelector("img, video, iframe");
+      if (current) current.replaceWith(replacement);
+      else frame.appendChild(replacement);
 
-    if (config.aspect) frame.style.setProperty("--media-aspect", config.aspect);
-    if (config.fit) frame.style.setProperty("--media-fit", config.fit);
-    slot.dataset.mediaLoaded = "true";
-  });
+      if (config.aspect) frame.style.setProperty("--media-aspect", config.aspect);
+      if (config.fit) frame.style.setProperty("--media-fit", config.fit);
+      slot.dataset.mediaLoaded = "true";
+    });
+  }
+
+  const legacy = window.TUIDG_MEDIA || {};
+  const manifestUrl = new URL("../../content/media.json", mediaBase);
+  fetch(manifestUrl, { cache: "no-cache" })
+    .then((response) => {
+      if (!response.ok) throw new Error(`Media manifest failed: ${response.status}`);
+      return response.json();
+    })
+    .then((items) => {
+      const managed = Object.fromEntries((items || []).map((item) => [item.id, item]));
+      applyOverrides({ ...legacy, ...managed });
+    })
+    .catch(() => applyOverrides(legacy));
 })();

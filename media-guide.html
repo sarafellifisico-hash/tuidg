@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TUIDG — Media Guide</title>
+    <link rel="stylesheet" href="assets/site.css" />
+    <link rel="stylesheet" href="assets/media/media-guide.css" />
+    <link rel="icon" href="assets/favicon.svg" />
+  </head>
+  <body>
+    <main class="media-guide">
+      <a class="brand" href="index.html"><span class="brand-mark">T</span><span><strong>TUIDG</strong><small>Immaterial Geometry</small></span></a>
+      <p>MEDIA MANAGEMENT</p>
+      <h1>Replace any visual without changing the chapter HTML.</h1>
+      <p class="guide-lead">Every reserved window has a permanent identifier. Upload the new file, generate its configuration below, and paste that entry into the central manifest. The same process accepts images, videos, and HTML animations.</p>
+
+      <section class="guide-panel">
+        <h2>Three steps</h2>
+        <ol class="guide-steps">
+          <li><strong>1. Upload</strong>Place the media file in <code>assets/media/library/</code>.</li>
+          <li><strong>2. Configure</strong>Select the slot and generate its manifest entry.</li>
+          <li><strong>3. Publish</strong>Paste the entry inside <code>window.TUIDG_MEDIA</code> and commit.</li>
+        </ol>
+        <div class="guide-actions">
+          <a class="guide-button" href="https://github.com/sarafellifisico-hash/tuidg/upload/main/assets/media/library">Upload media on GitHub ↗</a>
+          <a class="guide-button" href="https://github.com/sarafellifisico-hash/tuidg/edit/main/assets/media/media-manifest.js">Edit central manifest ↗</a>
+        </div>
+      </section>
+
+      <section class="guide-panel">
+        <h2>Configuration generator</h2>
+        <div class="guide-form">
+          <label>Reserved window<select id="slot-id"></select></label>
+          <label>Media type<select id="media-type"><option value="image">Image</option><option value="video">Video</option><option value="animation">HTML animation</option></select></label>
+          <label class="wide">File path<input id="media-path" placeholder="library/my-file.mp4" /></label>
+          <label class="wide">Accessible description<input id="media-alt" placeholder="Describe what the visual shows" /></label>
+          <label>Aspect ratio<input id="media-aspect" value="16 / 10" /></label>
+          <label>Image fit<select id="media-fit"><option value="contain">Contain</option><option value="cover">Cover</option></select></label>
+          <label class="wide">Generated entry<textarea id="manifest-entry" readonly></textarea></label>
+        </div>
+        <div class="guide-actions"><button class="guide-button" id="copy-entry" type="button">Copy entry</button></div>
+      </section>
+
+      <section class="guide-panel">
+        <h2>Reserved-window catalog</h2>
+        <div class="catalog-wrap"><table class="media-catalog"><thead><tr><th>ID</th><th>Type</th><th>Original reference</th><th>Location</th></tr></thead><tbody id="media-catalog-list"></tbody></table></div>
+      </section>
+    </main>
+    <script src="assets/media/media-catalog.js"></script>
+    <script src="assets/media/media-guide.js"></script>
+  </body>
+</html>

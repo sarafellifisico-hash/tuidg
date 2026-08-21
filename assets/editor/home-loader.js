@@ -22,7 +22,7 @@
       markup(".statement .cms-body", data.premise_body);
       text(".principles .section-heading h2", data.foundation_title);
       text(".principles .section-heading > p:last-child", data.foundation_lead);
-      document.querySelectorAll(".principle-grid article").forEach((card, index) => {
+      document.querySelectorAll(".axiom-list article").forEach((card, index) => {
         const item = (data.principles || [])[index];
         if (!item) return;
         card.querySelector("h3").textContent = item.title;

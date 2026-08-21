@@ -1,0 +1,631 @@
+:root {
+  --tuidg-editor-blue: #1a73e8;
+  --tuidg-editor-blue-dark: #1558b0;
+  --tuidg-editor-text: #202124;
+  --tuidg-editor-muted: #5f6368;
+  --tuidg-editor-line: #dadce0;
+  --tuidg-editor-panel: 320px;
+  --tuidg-editor-top: 64px;
+}
+
+html.tuidg-editor-active {
+  scroll-padding-top: calc(var(--tuidg-editor-top) + 16px);
+}
+
+html.tuidg-editor-active body {
+  padding-top: var(--tuidg-editor-top) !important;
+  padding-right: var(--tuidg-editor-panel) !important;
+  transition: padding 180ms ease;
+}
+
+html.tuidg-editor-preview body {
+  padding-top: var(--tuidg-editor-top) !important;
+  padding-right: 0 !important;
+}
+
+.tuidg-editor-topbar,
+.tuidg-editor-panel,
+.tuidg-editor-float,
+.tuidg-editor-selection-label,
+.tuidg-editor-modal,
+.tuidg-editor-toast,
+.tuidg-editor-welcome {
+  font-family: Arial, Helvetica, sans-serif !important;
+  color: var(--tuidg-editor-text) !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+}
+
+.tuidg-editor-topbar,
+.tuidg-editor-panel,
+.tuidg-editor-float,
+.tuidg-editor-modal,
+.tuidg-editor-toast,
+.tuidg-editor-welcome,
+.tuidg-editor-topbar *,
+.tuidg-editor-panel *,
+.tuidg-editor-float *,
+.tuidg-editor-modal *,
+.tuidg-editor-welcome * {
+  box-sizing: border-box;
+}
+
+.tuidg-editor-topbar {
+  position: fixed;
+  z-index: 2147483000;
+  inset: 0 0 auto 0;
+  height: var(--tuidg-editor-top);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 12px 0 18px;
+  border-bottom: 1px solid var(--tuidg-editor-line);
+  background: #fff;
+  box-shadow: 0 1px 4px #00000012;
+}
+
+.tuidg-editor-brand {
+  min-width: 190px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: var(--tuidg-editor-text);
+}
+
+.tuidg-editor-brand-mark {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  color: #fff;
+  background: linear-gradient(145deg, #6b5cff, #1a73e8);
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.tuidg-editor-brand strong {
+  display: block;
+  font-size: 15px;
+  line-height: 1.15;
+}
+
+.tuidg-editor-brand small {
+  display: block;
+  margin-top: 2px;
+  color: var(--tuidg-editor-muted);
+  font-size: 10px;
+}
+
+.tuidg-editor-topbar-group {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.tuidg-editor-topbar-spacer {
+  flex: 1;
+}
+
+.tuidg-editor-topbar button,
+.tuidg-editor-topbar a,
+.tuidg-editor-panel button,
+.tuidg-editor-float button,
+.tuidg-editor-modal button,
+.tuidg-editor-welcome button {
+  min-width: 36px;
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin: 0;
+  padding: 7px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: var(--tuidg-editor-text);
+  background: transparent;
+  box-shadow: none;
+  font: 600 12px/1 Arial, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tuidg-editor-topbar button:hover,
+.tuidg-editor-topbar a:hover,
+.tuidg-editor-panel button:hover,
+.tuidg-editor-float button:hover {
+  background: #f1f3f4;
+}
+
+.tuidg-editor-topbar button:disabled,
+.tuidg-editor-panel button:disabled {
+  opacity: .38;
+  cursor: default;
+}
+
+.tuidg-editor-topbar .tuidg-editor-publish {
+  min-width: 92px;
+  color: #fff;
+  background: var(--tuidg-editor-blue);
+  border-color: var(--tuidg-editor-blue);
+}
+
+.tuidg-editor-topbar .tuidg-editor-publish:hover {
+  background: var(--tuidg-editor-blue-dark);
+}
+
+.tuidg-editor-topbar .tuidg-editor-exit {
+  border-color: var(--tuidg-editor-line);
+}
+
+.tuidg-editor-panel-toggle {
+  display: none !important;
+}
+
+.tuidg-editor-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-grid;
+  place-items: center;
+  font-size: 17px;
+  line-height: 1;
+}
+
+.tuidg-editor-panel {
+  position: fixed;
+  z-index: 2147482900;
+  top: var(--tuidg-editor-top);
+  right: 0;
+  bottom: 0;
+  width: var(--tuidg-editor-panel);
+  overflow: auto;
+  border-left: 1px solid var(--tuidg-editor-line);
+  background: #fff;
+  box-shadow: -3px 0 14px #0000000d;
+}
+
+.tuidg-editor-tabs {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 1px solid var(--tuidg-editor-line);
+  background: #fff;
+}
+
+.tuidg-editor-tabs button {
+  position: relative;
+  min-height: 50px;
+  border-radius: 0;
+  color: var(--tuidg-editor-muted);
+}
+
+.tuidg-editor-tabs button[aria-selected="true"] {
+  color: var(--tuidg-editor-blue);
+}
+
+.tuidg-editor-tabs button[aria-selected="true"]::after {
+  position: absolute;
+  right: 24px;
+  bottom: 0;
+  left: 24px;
+  height: 3px;
+  background: var(--tuidg-editor-blue);
+  content: "";
+}
+
+.tuidg-editor-pane {
+  display: none;
+  padding: 18px;
+}
+
+.tuidg-editor-pane.is-active {
+  display: block;
+}
+
+.tuidg-editor-panel h3 {
+  margin: 6px 0 12px;
+  color: var(--tuidg-editor-muted);
+  font: 700 10px/1.2 Arial, sans-serif;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.tuidg-editor-insert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+  margin-bottom: 24px;
+}
+
+.tuidg-editor-insert-grid button {
+  min-height: 78px;
+  flex-direction: column;
+  border-color: var(--tuidg-editor-line);
+  background: #fff;
+  font-size: 11px;
+}
+
+.tuidg-editor-insert-grid button .tuidg-editor-icon {
+  color: var(--tuidg-editor-blue);
+  font-size: 23px;
+}
+
+.tuidg-editor-help {
+  padding: 13px;
+  border: 1px solid #d2e3fc;
+  border-radius: 7px;
+  color: #3c4043;
+  background: #f5f9ff;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.tuidg-editor-field {
+  margin-bottom: 16px;
+}
+
+.tuidg-editor-field label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+  color: var(--tuidg-editor-muted);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.tuidg-editor-field input[type="text"],
+.tuidg-editor-field input[type="url"],
+.tuidg-editor-field input[type="password"],
+.tuidg-editor-field select {
+  width: 100%;
+  min-height: 38px;
+  padding: 7px 9px;
+  border: 1px solid var(--tuidg-editor-line);
+  border-radius: 4px;
+  color: var(--tuidg-editor-text);
+  background: #fff;
+  font: 12px/1.3 Arial, sans-serif;
+}
+
+.tuidg-editor-field input[type="range"] {
+  width: 100%;
+  accent-color: var(--tuidg-editor-blue);
+}
+
+.tuidg-editor-color-row {
+  display: grid;
+  grid-template-columns: 44px 1fr 36px;
+  gap: 7px;
+}
+
+.tuidg-editor-color-row input[type="color"] {
+  width: 44px;
+  height: 38px;
+  padding: 2px;
+  border: 1px solid var(--tuidg-editor-line);
+  border-radius: 4px;
+  background: #fff;
+}
+
+.tuidg-editor-segmented {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid var(--tuidg-editor-line);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.tuidg-editor-segmented button {
+  min-width: 0;
+  border-right: 1px solid var(--tuidg-editor-line);
+  border-radius: 0;
+}
+
+.tuidg-editor-segmented button:last-child {
+  border-right: 0;
+}
+
+.tuidg-editor-selected-name {
+  margin: 0 0 18px;
+  padding: 10px 12px;
+  border-left: 3px solid var(--tuidg-editor-blue);
+  color: #3c4043;
+  background: #f8f9fa;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.tuidg-editor-danger {
+  width: 100%;
+  border-color: #f2c7c3 !important;
+  color: #b3261e !important;
+}
+
+.tuidg-editable {
+  cursor: default;
+}
+
+.tuidg-editable:hover {
+  outline: 1px dashed #1a73e8aa !important;
+  outline-offset: 3px;
+}
+
+.tuidg-selected {
+  outline: 2px solid var(--tuidg-editor-blue) !important;
+  outline-offset: 3px;
+}
+
+.tuidg-text-editing {
+  cursor: text !important;
+  outline: 2px solid #7baaf7 !important;
+  caret-color: var(--tuidg-editor-blue);
+}
+
+.tuidg-dragging {
+  opacity: .55;
+}
+
+.tuidg-drop-before {
+  box-shadow: 0 -4px 0 var(--tuidg-editor-blue) !important;
+}
+
+.tuidg-drop-after {
+  box-shadow: 0 4px 0 var(--tuidg-editor-blue) !important;
+}
+
+.tuidg-editor-float {
+  position: absolute;
+  z-index: 2147482700;
+  display: none;
+  align-items: center;
+  gap: 2px;
+  padding: 4px;
+  border: 1px solid var(--tuidg-editor-line);
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 4px 16px #0003;
+}
+
+.tuidg-editor-float.is-visible {
+  display: flex;
+}
+
+.tuidg-editor-float button {
+  min-width: 32px;
+  min-height: 30px;
+  padding: 5px 7px;
+}
+
+.tuidg-editor-drag-handle {
+  cursor: grab !important;
+}
+
+.tuidg-editor-selection-label {
+  position: absolute;
+  z-index: 2147482600;
+  display: none;
+  padding: 4px 7px;
+  border-radius: 3px 3px 0 0;
+  color: #fff !important;
+  background: var(--tuidg-editor-blue);
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.tuidg-editor-selection-label.is-visible {
+  display: block;
+}
+
+.tuidg-editor-resize-handle {
+  position: absolute;
+  z-index: 2147482800;
+  width: 14px;
+  height: 14px;
+  display: none;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: var(--tuidg-editor-blue);
+  box-shadow: 0 1px 4px #0005;
+  cursor: nwse-resize;
+}
+
+.tuidg-editor-resize-handle.is-visible {
+  display: block;
+}
+
+.tuidg-editor-modal,
+.tuidg-editor-welcome {
+  position: fixed;
+  z-index: 2147483600;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: #17201cb8;
+  backdrop-filter: blur(4px);
+}
+
+.tuidg-editor-modal.is-open,
+.tuidg-editor-welcome.is-open {
+  display: flex;
+}
+
+.tuidg-editor-dialog {
+  width: min(100%, 520px);
+  max-height: min(760px, 90vh);
+  overflow: auto;
+  padding: 26px;
+  border-radius: 10px;
+  color: var(--tuidg-editor-text);
+  background: #fff;
+  box-shadow: 0 22px 70px #0006;
+}
+
+.tuidg-editor-dialog h2 {
+  margin: 0 0 8px;
+  color: var(--tuidg-editor-text);
+  font: 700 22px/1.2 Arial, sans-serif;
+}
+
+.tuidg-editor-dialog p,
+.tuidg-editor-dialog li {
+  color: var(--tuidg-editor-muted);
+  font: 13px/1.55 Arial, sans-serif;
+}
+
+.tuidg-editor-dialog ol {
+  padding-left: 20px;
+}
+
+.tuidg-editor-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.tuidg-editor-dialog-actions .primary {
+  color: #fff;
+  background: var(--tuidg-editor-blue);
+}
+
+.tuidg-editor-dialog-actions .secondary {
+  border-color: var(--tuidg-editor-line);
+}
+
+.tuidg-editor-auth-status {
+  min-height: 18px;
+  margin-top: 8px;
+  color: var(--tuidg-editor-muted);
+  font-size: 11px;
+}
+
+.tuidg-editor-auth-status.is-error {
+  color: #b3261e;
+}
+
+.tuidg-editor-auth-status.is-ok {
+  color: #137333;
+}
+
+.tuidg-editor-toast {
+  position: fixed;
+  z-index: 2147483700;
+  left: 50%;
+  bottom: 26px;
+  max-width: min(92vw, 620px);
+  padding: 12px 18px;
+  border-radius: 6px;
+  color: #fff !important;
+  background: #26332c;
+  box-shadow: 0 8px 28px #0005;
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 12px);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.tuidg-editor-toast.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.tuidg-editor-toast.is-error {
+  background: #b3261e;
+}
+
+.tuidg-editor-welcome .tuidg-editor-dialog {
+  width: min(100%, 650px);
+}
+
+.tuidg-editor-welcome-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 22px 0;
+}
+
+.tuidg-editor-welcome-card {
+  padding: 16px;
+  border: 1px solid var(--tuidg-editor-line);
+  border-radius: 7px;
+  background: #f8f9fa;
+}
+
+.tuidg-editor-welcome-card b {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--tuidg-editor-blue);
+  font-size: 19px;
+}
+
+.tuidg-editor-welcome-card strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.tuidg-editor-welcome-card p {
+  margin: 0;
+  font-size: 11px;
+}
+
+html.tuidg-editor-preview .tuidg-editor-panel,
+html.tuidg-editor-preview .tuidg-editor-float,
+html.tuidg-editor-preview .tuidg-editor-selection-label,
+html.tuidg-editor-preview .tuidg-editor-resize-handle,
+html.tuidg-editor-preview .tuidg-editor-toast {
+  display: none !important;
+}
+
+html.tuidg-editor-preview .tuidg-editable,
+html.tuidg-editor-preview .tuidg-selected {
+  outline: 0 !important;
+}
+
+@media (max-width: 940px) {
+  :root {
+    --tuidg-editor-panel: 286px;
+  }
+
+  .tuidg-editor-brand {
+    min-width: 44px;
+  }
+
+  .tuidg-editor-brand > span:last-child,
+  .tuidg-editor-topbar .optional-label {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  html.tuidg-editor-active body {
+    padding-right: 0 !important;
+  }
+
+  .tuidg-editor-panel {
+    width: min(88vw, 320px);
+    transform: translateX(100%);
+    transition: transform 180ms ease;
+  }
+
+  .tuidg-editor-panel-toggle {
+    display: inline-flex !important;
+  }
+
+  .tuidg-editor-panel.is-open {
+    transform: translateX(0);
+  }
+
+  .tuidg-editor-welcome-grid {
+    grid-template-columns: 1fr;
+  }
+}
